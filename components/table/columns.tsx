@@ -22,6 +22,8 @@ export const columns: ColumnDef<Appointment>[] = [
     header: "Patient",
     cell: ({ row }) => {
       const appointment = row.original;
+      console.log("hihihihi");
+      console.log(appointment.patient.name);
       return <p className="text-14-medium ">{appointment.patient.name}</p>;
     },
   },
@@ -30,6 +32,8 @@ export const columns: ColumnDef<Appointment>[] = [
     header: "Status",
     cell: ({ row }) => {
       const appointment = row.original;
+      console.log(appointment.status);
+
       return (
         <div className="min-w-[115px]">
           <StatusBadge status={appointment.status} />

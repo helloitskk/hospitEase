@@ -36,7 +36,8 @@ export const PatientForm = () => {
         email: values.email,
         phone: values.phone,
       };
-
+       
+      console.log("user",user);
       const newUser = await createUser(user);
 
       if (newUser) {

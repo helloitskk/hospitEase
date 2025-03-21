@@ -22,11 +22,11 @@ const RequestSuccess = async ({
       <div className="success-img">
         <Link href="/">
           <Image
-            src="/assets/icons/logo-full.svg"
+            src="/assets/icons/hospiteEase.jpg"
             height={1000}
             width={1000}
             alt="logo"
-            className="h-10 w-fit"
+            className="side-img max-w-[100px]"
           />
         </Link>
 
@@ -73,7 +73,7 @@ const RequestSuccess = async ({
           </Link>
         </Button>
 
-        <p className="copyright">© 2024 CarePluse</p>
+        <p className="copyright">© 2025 HospiteEase</p>
       </div>
     </div>
   );
